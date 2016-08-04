@@ -86,6 +86,7 @@ Happy coding!
 ### Question 5
 
 This is a feature phone keypad:
+```
 
 ------- ------- -------
 |     | | ABC | | DEF |
@@ -104,7 +105,7 @@ This is a feature phone keypad:
 |  *  | |  0  | |  #  |
 ------- ------- -------
 
-
+```
 Before predictive text entry systems like T9, you had to press a button
 repeatedly to cycle through the possible values until you reached
 the one you wanted.
