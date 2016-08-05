@@ -10,3 +10,15 @@
 # Solution:
 class InputOutString(object):
     # code goes here
+def __init__(soul, input_str):
+        soul.input = input_str
+
+    def getString(soul):
+        str = input("")
+
+    def printString(soul):
+        return soul.getString()
+
+user = input("")
+cl = InputOutString(user)
+cl.printString()
