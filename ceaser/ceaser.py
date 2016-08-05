@@ -8,10 +8,25 @@
 # more on cipher visit http://practicalcryptography.com/ciphers/caesar-cipher/
 # happy coding :-)
 
-
-def CaesarCipher(string, num):
-    # Your code goes here
-
+import re
+import unittest
 
 
-print "Cipertext:", CaesarCipher("A Crazy fool Z", 1)
+class CaesarCipher(object):
+    """
+    cipher method checks through each letter, to
+    """
+    def __init__(self, caeser):
+        self.caeser = caeser
+
+    def cipher(self, num):
+        string = self.caeser
+        out = []
+        for word in string:
+            for x in word:
+                out.append(chr(ord(x) + num))
+        print(out)
+        return " ".join(out)
+
+c = CaesarCipher("A Crazy fool Z")
+print(c.cipher(1))
