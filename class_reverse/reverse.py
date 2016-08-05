@@ -10,3 +10,9 @@
 # Solution:
 class InputOutString(object):
     # code goes here
+    def __init__(self):
+        self.s = ""
+
+    def getString(self):
+        self.s = raw_input("Write Down Any Word : ")
+
