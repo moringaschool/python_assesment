@@ -1,4 +1,4 @@
-import random
+mport random
 
 class PassGenerator:
     def __init__(self):
