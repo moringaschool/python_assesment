@@ -6,13 +6,13 @@
 # For example: if str is "xooxxxxooxo" then the output should return false because there are 6 x's and 5 o's.
 
 
-def Xoxo(str):
-    # code goes here
-    string = string.lower()
-    if string.find("x") != -1 or string.find("o") != -1:
-        return string.count("x") == string.count("o")
-    else:
-        return False
+def xoxo(str):  # declare method
+    sub = "x"  # assign value to initial variable
+    sub2 = "o"  # assign value to initial variable
 
-# keep the function call
-print (Xoxo("have fun..xoxo"))
+    str_count = str.count(sub)  # assign count result to another variable
+    str_count2 = str.count(sub2)  #assign count result to another variable
+
+    return str_count == str_count2  #compare equality of count results
+
+print xoxo("xoxoxoxoxoxoxo")  #call method
