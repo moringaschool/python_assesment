@@ -126,5 +126,92 @@ presses('LOL') # 9
 presses('How R u 2day') # 23
 
 Bonus:  Try to avoid hard-coding the number of button presses for each letter!
-Resource:  
-Use python [Dictionaries](http://www.learnpython.org/en/Dictionaries) in this exercise
+
+Resource:Use python [Dictionaries](http://www.learnpython.org/en/Dictionaries) in this exercise
+
+
+### Question 6
+##### List Comprehension
+
+Let’s say I give you a list saved in a variable: a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100].
+Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
+
+The idea of a list comprehension is to make code more compact to accomplish tasks involving lists.
+Take for example this code:
+
+```python
+
+  years_of_birth = [1990, 1991, 1990, 1990, 1992, 1991]
+  ages = []
+  for year in years_of_birth: 
+    ages.append(2014 - year)
+```
+
+And at the end, the variable ages has the list [24, 23, 24, 24, 22, 23].
+What this code did was translate the years of birth into ages, and it took us a for loop and an append statement to a new list to do that.
+
+Compare to this piece of code:
+
+```python
+
+  years_of_birth = [1990, 1991, 1990, 1990, 1992, 1991]
+  ages = [2014 - year for year in years_of_birth]
+
+```
+
+The second line here - the line with ages is a list comprehension.
+
+It accomplishes the same thing as the first code sample - at the end,
+the ages variable has a list containing [24, 23, 24, 24, 22, 23],
+the ages corresponding to all the birthdates.
+
+The idea of the list comprehension is to condense the for loop and the list appending into one simple line. Notice that the for loop just shifted to the end of the list comprehension, and the part before the for keyword is the thing to append to the end of the new list.
+
+Happy coding! :)
+
+
+### Question 6
+#### List Overlap
+
+Take two lists, say for example these two:
+```python
+
+  a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+  b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+```
+
+And write a program that returns a list that contains only the elements that are common between the lists (without duplicates).
+Make sure your program works on two lists of different sizes.
+
+Bonus:
+
+    Randomly generate two lists to test this
+    Write this in one line of Python
+
+List properties (In other words, “things you can do with lists.”)
+
+One of the interesting things you can do with lists in Python is figure out whether something is inside the list or not. For example:
+
+```python
+
+  >>> a = [5, 10, 15, 20]
+  >>> 10 in a
+  True
+  >>> 3 in a
+  False
+
+```
+
+You can of course use this in loops, conditionals, and any other programming constructs.
+
+```python
+
+  list_of_students = ["Michele", "Sara", "Cassie"]
+
+  name = input("Type name to check: ")
+  if name in list_of_students:
+    print("This student is enrolled.")
+
+```
+Happy coding! :)
